@@ -1,0 +1,291 @@
+* {
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.tournamentsSection-container {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(247, 217, 21),
+    rgb(202, 17, 17)
+  );
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  height: 100%;
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tournamentsSection {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 1, 23),
+    rgb(38, 4, 96)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 19.3%;
+  object-fit: cover;
+  background-color: gray;
+  margin: 0 0 5px 0;
+}
+
+.gameLOGOimg {
+  width: 30%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 1, 23),
+    rgb(38, 4, 96)
+  );
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  padding: 0 8px;
+}
+
+.gameLOGOimg img {
+  height: 60%;
+  width: auto;
+  padding: 10px;
+}
+
+.tournament {
+  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapDetails-tournyTiming {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 1, 23),
+    rgb(38, 4, 96)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: large;
+  height: 40%;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  color: #fff;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.match-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 0, 0.629); */
+  color: #fff;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.tournyTiming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  color: #fff;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.prizepool-joinTouny {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 1, 23),
+    rgb(38, 4, 96)
+  );
+}
+
+.prizepool {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(1, 1, 23),
+    rgb(38, 4, 96)
+  );
+  width: 50%;
+  height: 100%;
+  padding-left: 10px;
+  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+.prizepool span {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinTourny {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8zO23Kt-qxAD0ocBn5wn-R1XGwudVQ_je7g&s);
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joinTourny a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* form css */
+
+a input {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(247, 217, 21),
+    rgb(202, 17, 17)
+  );
+  width: 130px;
+  height: 60px;
+  font-size: x-large;
+  font-weight: 800;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+  border-radius: 18px;
+  color: #fff;
+}
+
+input:hover {
+  opacity: 0.75;
+}
+
+.main-form-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e1e4;
+}
+
+.form-container {
+  height: 65vh;
+  width: 80%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(157, 136, 14),
+    rgba(10, 240, 214, 0)
+  );
+  padding: 10px;
+  border: solid goldenrod;
+  border-radius: 22px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container h1 {
+  height: 10%;
+  width: 85%;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: #000 1px 1px 1px;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 4vh;
+  padding: 30px;
+}
+
+#ingame-name {
+  border-radius: 20px;
+  background-color: transparent;
+  height: 15%;
+  color: black;
+  font-size: 3vh;
+  font-weight: 700;
+  border: 4px solid black;
+}
+
+#Email-id {
+  border-radius: 20px;
+  background-color: transparent;
+  height: 15%;
+  color: black;
+  font-size: 3vh;
+  margin-bottom: 10px;
+  border: 4px solid black;
+  font-weight: 700;
+}
+
+#game_name {
+  border-radius: 20px;
+  background-color: transparent;
+  height: 15%;
+  color: black;
+  font-size: 3vh;
+  border: 4px solid black;
+  font-weight: 700;
+}
+
+::placeholder {
+  color: #000;
+}
+
+#submit-form {
+  background-color: transparent;
+  height: 13%;
+  margin-top: 40px;
+  font-weight: 900;
+  font-size: xx-large;
+  border-radius: 20px;
+  width: 40vw;
+  text-align: center;
+}
+
+/* winners css */
+
+.winners{
+  width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winners span{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: smaller;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
