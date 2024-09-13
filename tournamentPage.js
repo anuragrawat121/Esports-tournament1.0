@@ -1,5 +1,3 @@
-
-
 function submitForm() {
   // Retrieving data
 
@@ -13,13 +11,13 @@ function submitForm() {
   gameName = localStorage.setItem("gameName", gameName);
 
   // Retrieving stored data using it for checking game name
-  gameName = localStorage.getItem("gameName");
-  let bgmi = "BGMI";
-  let freefire = "FREEFIRE";
-  if (gameName == bgmi || gameName == freefire) {
-    alert("Details submitted, Thankyou"); 
-  } else
-    alert(
-      " Registration failed Game should be BGMI or FREEFIRE and write it in capital "
-    );    
+  alert("Details submitted, Thankyou");
+}
+
+function popupForm() {
+  document.getElementById("container").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("container").style.display = "none";
 }
