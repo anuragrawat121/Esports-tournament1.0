@@ -9,132 +9,182 @@
   <script src="tournamentPage.js"></script>
   <body>
     <section class="tournamentsSection-container">
-      <div class="flex-container">
-        <!-- TOUNAMENT 1 -->
-        <div class="tournamentsSection">
-          <div class="gameLOGOimg">
-            <img src="assets/freefire.jpg" />
+      <div class="nav">
+        <div class="logo">
+          <img src="https://cdn-icons-png.flaticon.com/512/4176/4176095.png" />
+        </div>
+        <nav class="menu">
+          <a href="index.html ">Home</a>
+          <a href="tournamentPage.html">Tournaments</a>
+          <a href="Winners.html">Winners</a>
+        </nav>
+      </div>
+      <section class="tournament-wrapper">
+        <div id="container">
+          <div class="form-container">
+            <img
+            style="height: 25px; width: auto; float: right;" 
+            onclick="closeForm()" 
+            src="https://cdn-icons-png.flaticon.com/512/1617/1617543.png"
+            />
+            <h1>REGISTER HERE</h1>
+            <form>
+              <input
+            id="ingame-name"
+            type="text"
+            name="ingame-name"
+              placeholder="Enter your ingame-name"
+              />
+              <br />
+              <input
+              id="Email-id"
+              type="email"
+              name="Email-id"
+              placeholder="Enter your Email-id"
+              />
+              <input
+              id="game_name"
+              type="text"
+              name="game_name"
+              placeholder="Enter the Game name"
+              />
+              <input
+              type="submit"
+              onclick="submitForm()"
+              name="submit"
+              id="submit-form"
+              />
+            </form>
           </div>
-          <div class="tournament">
-            <div class="mapDetails-tournyTiming">
-              <span class="map">Map-Bermuda</span>
-              <span class="match-type">Match type-Squad</span>
-              <span class="tournyTiming">Sunday 10:00am</span>
+        </div>
+      </div>
+      <!-- TOUNAMENT 1 -->
+
+      <div class="tournamentsSection">
+        <div class="gameLOGOimg">
+          <img src="/assets/freefire.jpg" />
+        </div>
+        <div class="tournament">
+          <div class="mapDetails-tournyTiming">
+            <span class="map">Map-Bermuda</span>
+            <span class="match-type">Match type-Squad</span>
+            <span class="tournyTiming">Sunday 10:00am</span>
+          </div>
+          <div class="prizepool-joinTouny">
+            <div class="prizepool">
+              <span>Prize pool</span>
+              <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
             </div>
-            <div class="prizepool-joinTouny">
-              <div class="prizepool">
-                <span>Prize pool</span>
-                <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
-              </div>
-              <div class="joinTourny">
-                <a href="details.html" target="_blank">
-                  <input
-                    id="join-button"
-                    type="submit"
-                    value="JOIN !"
-                  />
-                </a>
-              </div>
+            <div class="joinTourny">
+              <button 
+                   id="join-button"
+                   onclick="popupForm()">JOIN !
+              </button>
             </div>
           </div>
         </div>
-        <!-- TOUNAMENT 2-->
-        <div class="tournamentsSection">
-          <div class="gameLOGOimg">
-            <img src="assets/freefire.jpg" />
+      </div>
+      <!-- TOUNAMENT 2-->
+      <div class="tournamentsSection">
+        <div class="gameLOGOimg">
+          <img src="/assets/freefire.jpg" />
+        </div>
+        <div class="tournament">
+          <div class="mapDetails-tournyTiming">
+            <span class="map">Map-Bermuda</span>
+            <span class="match-type">Match type-Squad</span>
+            <span class="tournyTiming">Sunday 10:00am</span>
           </div>
-          <div class="tournament">
-            <div class="mapDetails-tournyTiming">
-              <span class="map">Map-Bermuda</span>
-              <span class="match-type">Match type-Squad</span>
-              <span class="tournyTiming">Sunday 10:00am</span>
+          <div class="prizepool-joinTouny">
+            <div class="prizepool">
+              <span>Prize pool</span>
+              <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
             </div>
-            <div class="prizepool-joinTouny">
-              <div class="prizepool">
-                <span>Prize pool</span>
-                <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
-              </div>
-              <div class="joinTourny">
-                <a href="details.html" target="_blank">
-                  <input class="join-button" type="submit" value="JOIN !" />
-                </a>
-              </div>
+            <div class="joinTourny">
+              <button 
+              id="join-button"
+              onclick="popupForm()">JOIN !
+         </button>
             </div>
           </div>
         </div>
-        <!-- TOUNAMENT 3-->
-        <div class="tournamentsSection">
-          <div class="gameLOGOimg">
-            <img src="assets/freefire.jpg" />
+      </div>
+      <!-- TOUNAMENT 3-->
+      <div class="tournamentsSection">
+        <div class="gameLOGOimg">
+          <img src="/assets/freefire.jpg" />
+        </div>
+        <div class="tournament">
+          <div class="mapDetails-tournyTiming">
+            <span class="map">Map-Bermuda</span>
+            <span class="match-type">Match type-Solo</span>
+            <span class="tournyTiming">Sunday 10:00am</span>
           </div>
-          <div class="tournament">
-            <div class="mapDetails-tournyTiming">
-              <span class="map">Map-Bermuda</span>
-              <span class="match-type">Match type-Solo</span>
-              <span class="tournyTiming">Sunday 10:00am</span>
+          <div class="prizepool-joinTouny">
+            <div class="prizepool">
+              <span>Prize pool</span>
+              <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
             </div>
-            <div class="prizepool-joinTouny">
-              <div class="prizepool">
-                <span>Prize pool</span>
-                <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
-              </div>
-              <div class="joinTourny">
-                <a href="details.html" target="_blank">
-                  <input id="join-button" type="submit" value="JOIN !" />
-                </a>
-              </div>
+            <div class="joinTourny">
+              <button 
+              id="join-button"
+              onclick="popupForm()">JOIN !
+         </button>
             </div>
           </div>
         </div>
-        <!-- TOUNAMENT 4-->
-        <div class="tournamentsSection">
-          <div class="gameLOGOimg">
-            <img src="assets/bgmilogo.jpg" />
+      </div>
+      <!-- TOUNAMENT 4-->
+      <div class="tournamentsSection">
+        <div class="gameLOGOimg">
+          <img src="/assets/bgmilogo.jpg" />
+        </div>
+        <div class="tournament">
+          <div class="mapDetails-tournyTiming">
+            <span class="map">Map-Erangle</span>
+            <span class="match-type">Match type-Solo</span>
+            <span class="tournyTiming">Saturday 10:00am</span>
           </div>
-          <div class="tournament">
-            <div class="mapDetails-tournyTiming">
-              <span class="map">Map-Erangle</span>
-              <span class="match-type">Match type-Solo</span>
-              <span class="tournyTiming">Saturday 10:00am</span>
+          <div class="prizepool-joinTouny">
+            <div class="prizepool">
+              <span>Prize pool</span>
+              <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
             </div>
-            <div class="prizepool-joinTouny">
-              <div class="prizepool">
-                <span>Prize pool</span>
-                <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
-              </div>
-              <div class="joinTourny">
-                <a href="details.html" target="_blank">
-                  <input id="join-button" type="submit" value="JOIN !" />
-                </a>
-              </div>
+            <div class="joinTourny">
+              <button 
+                  id="join-button"
+                  onclick="popupForm()">JOIN !
+            </button>
             </div>
           </div>
         </div>
-          <!-- TOUNAMENT 5-->
-        <div class="tournamentsSection">
-          <div class="gameLOGOimg">
-            <img src="assets/bgmilogo.jpg" />
+      </div>
+        <!-- TOUNAMENT 5-->
+      <div class="tournamentsSection">
+        <div class="gameLOGOimg">
+          <img src="/assets/bgmilogo.jpg" />
+        </div>
+        <div class="tournament">
+          <div class="mapDetails-tournyTiming">
+            <span class="map">Map-Erangle</span>
+            <span class="match-type">Match type-Squad</span>
+            <span class="tournyTiming">Saturday 10:00am</span>
           </div>
-          <div class="tournament">
-            <div class="mapDetails-tournyTiming">
-              <span class="map">Map-Erangle</span>
-              <span class="match-type">Match type-Squad</span>
-              <span class="tournyTiming">Saturday 10:00am</span>
+          <div class="prizepool-joinTouny">
+            <div class="prizepool">
+              <span>Prize pool</span>
+              <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
             </div>
-            <div class="prizepool-joinTouny">
-              <div class="prizepool">
-                <span>Prize pool</span>
-                <span class="prizepoolMoney">200(1st-100 2nd -60, 3rd-40)</span>
-              </div>
-              <div class="joinTourny">
-                <a href="details.html" target="_blank">
-                  <input id="join-button" type="submit" value="JOIN !" />
-                </a>
-              </div>
+            <div class="joinTourny">
+              <button 
+                   id="join-button"
+                   onclick="popupForm()">JOIN !
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </section>
   </body>
 </html>
